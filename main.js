@@ -1,8 +1,9 @@
 
+
 let minusBtn = document.querySelector(".input__minus");
 let plusBtn = document.querySelector(".input__plus");
 let userInput = document.querySelector(".input__number");
-
+const imageContainer = document.querySelector(".gallery__image-container");
 
 let userInputNumber = 0;
 
@@ -24,6 +25,11 @@ minusBtn.addEventListener("click", ()=>{
 
 });
 
+let d = document
+
+d.addEventListener('DOMContentLoaded', ()=>{
+    imgContainer.style.backgroundImage = `url("images/image-product-${imageNumber}.jpg")`
+})
 
 
 //Agregar al carrito cuando se da clic en el btn add to cart;
@@ -60,7 +66,7 @@ cartBtn.addEventListener("click", ()=>{
 
 
 //borrar el contenido del carrito
-const imageContainer = document.querySelector(".gallery__image-container");
+
 const previusGalleryBtn = document.querySelector(".gallery__previus");
 const nextGalleryBtn = document.querySelector(".gallery__next");
 let modalImageContainer = document.querySelector(".modal-gallery__image-container");
@@ -101,7 +107,7 @@ galleryThumnails = [...galleryThumnails]
 
 galleryThumnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', e =>{
-        imageContainer.style.backgroundImage = `url("images/image-product-${e.target.id}.jpg")`
+        imageContainer.style.backgroundImage = `url("../images/image-product-${e.target.id}.jpg")`
         console.log("click en thumbnail")
     })
 })
@@ -114,7 +120,7 @@ modalThumbnails = [...modalThumbnails];
 
 modalThumbnails.forEach(modalThumbnail => {
     modalThumbnail.addEventListener("click", e=>{
-        modalImageContainer.style.backgroundImage =  `url("images/image-product-${e.target.id.slice(-1)}.jpg")`
+        modalImageContainer.style.backgroundImage =  `url("../images/image-product-${e.target.id.slice(-1)}.jpg")`
     })
 })
 
@@ -211,6 +217,11 @@ function changePreviusImg(imgContainer){
     imgContainer.style.backgroundImage = `url("images/image-product-${imageNumber}.jpg")`;
 
 }
+
+
+
+
+
 
 
 

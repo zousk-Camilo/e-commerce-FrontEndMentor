@@ -186,7 +186,7 @@ function changeNextImage(imgContainer){
         imageNumber++;
     }
     
-    imgContainer.style.backgroundImage = `url("../images/image-product-${imageNumber}.jpg")`
+    imgContainer.style.backgroundImage = `url("./images/image-product-${imageNumber}.jpg")`
 }
 
 
@@ -198,7 +198,7 @@ function changePreviusImg(imgContainer){
     }else{
         imageNumber--;
     }
-    imgContainer.style.backgroundImage = `url("../images/image-product-${imageNumber}.jpg")`;
+    imgContainer.style.backgroundImage = `url("./images/image-product-${imageNumber}.jpg")`;
 
 }
 

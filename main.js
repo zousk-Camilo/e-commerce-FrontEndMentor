@@ -101,7 +101,7 @@ galleryThumnails = [...galleryThumnails]
 
 galleryThumnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', e =>{
-        imageContainer.style.backgroundImage = `url("../images/image-product-${e.target.id}.jpg")`
+        imageContainer.style.backgroundImage = `url("images/image-product-${e.target.id}.jpg")`
         console.log("click en thumbnail")
     })
 })
@@ -114,7 +114,7 @@ modalThumbnails = [...modalThumbnails];
 
 modalThumbnails.forEach(modalThumbnail => {
     modalThumbnail.addEventListener("click", e=>{
-        modalImageContainer.style.backgroundImage =  `url("../images/image-product-${e.target.id.slice(-1)}.jpg")`
+        modalImageContainer.style.backgroundImage =  `url("images/image-product-${e.target.id.slice(-1)}.jpg")`
     })
 })
 
@@ -196,7 +196,7 @@ function changeNextImage(imgContainer){
         imageNumber++;
     }
     
-    imgContainer.style.backgroundImage = `url("./images/image-product-${imageNumber}.jpg")`
+    imgContainer.style.backgroundImage = `url("images/image-product-${imageNumber}.jpg")`
 }
 
 
@@ -208,7 +208,7 @@ function changePreviusImg(imgContainer){
     }else{
         imageNumber--;
     }
-    imgContainer.style.backgroundImage = `url("./images/image-product-${imageNumber}.jpg")`;
+    imgContainer.style.backgroundImage = `url("images/image-product-${imageNumber}.jpg")`;
 
 }
 

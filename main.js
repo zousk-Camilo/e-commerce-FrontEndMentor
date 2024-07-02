@@ -1,5 +1,4 @@
 
-
 let minusBtn = document.querySelector(".input__minus");
 let plusBtn = document.querySelector(".input__plus");
 let userInput = document.querySelector(".input__number");
@@ -140,7 +139,18 @@ previusModalBtn.addEventListener('click', ()=>{
 
 //mostrar el navbar cuando presiono el menu de hamburgueza
 
-const hamburgerMenuBtn = document.querySelector(".")
+const hamburgerMenuBtn = document.querySelector(".header__menu");
+const modalNavBar = document.querySelector('.modal-navbar__background');
+const modalCloseIcon = document.querySelector('.modal-navbar__close-icon')
+
+hamburgerMenuBtn.addEventListener('click', e=>{
+    console.log('click')
+    modalNavBar.style.display = 'block'
+});
+
+modalCloseIcon.addEventListener('click', ()=>{
+    modalNavBar.style.display = 'none'
+})
 
 
 //funcniones
@@ -201,6 +211,19 @@ function changePreviusImg(imgContainer){
     imgContainer.style.backgroundImage = `url("./images/image-product-${imageNumber}.jpg")`;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
